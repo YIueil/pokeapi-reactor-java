@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
 public class PokeApiConfigurationProperties {
 
 	@NotNull
-	private URI baseUri;
+	private URI baseUri = URI.create("https://pokeapi.co/api/v2/");
 	private int maxBytesToBuffer = 565_000;
 
 	public URI getBaseUri() {
